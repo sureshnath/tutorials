@@ -5,7 +5,7 @@
     </listeners>
     <test name="test skip suite">
         <packages>
-            <package name="com.susoft.*"/>
+            <package name="com.susoft.skipsuite.*"/>
         </packages>
     </test>
 </suite>
