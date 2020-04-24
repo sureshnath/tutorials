@@ -1,0 +1,1 @@
+mvn test -Ptestng-suite -Dsurefire.suiteXmlFiles=src/test/resources/my_suites/test_skip_suite.xml

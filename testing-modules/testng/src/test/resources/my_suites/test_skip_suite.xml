@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="suite" parallel="classes" thread-count="2">
+    <listeners>
+	    <listener class-name="com.baeldung.reports.CustomisedReports" />
+    </listeners>
+    <test name="test skip suite">
+        <packages>
+            <package name="com.susoft.*"/>
+        </packages>
+    </test>
+</suite>
