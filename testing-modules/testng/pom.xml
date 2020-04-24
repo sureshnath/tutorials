@@ -49,12 +49,6 @@
                         <artifactId>maven-surefire-plugin</artifactId>
                         <version>${maven-surefire-plugin.version}</version>
                         <inherited>false</inherited>
-                        <configuration>
-                            <suiteXmlFiles>
-                                <suiteXmlFile>src/test/resources/test_suite.xml</suiteXmlFile>
-                            </suiteXmlFiles>
-                            <threadCount>1</threadCount>
-                        </configuration>
                         <dependencies>
                             <dependency>
                                 <groupId>org.apache.maven.surefire</groupId>

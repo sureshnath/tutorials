@@ -3,10 +3,9 @@
     <listeners>
 	    <listener class-name="com.baeldung.reports.CustomisedReports" />
     </listeners>
-    <test name="test skip suite">
+    <test name="test execution order">
         <packages>
-            <package name="com.skipsuite"/>
-            <package name="com.susoft"/>
+            <package name="com.skipsuite.*"/>
         </packages>
     </test>
 </suite>
