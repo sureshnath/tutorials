@@ -50,7 +50,9 @@
                         <version>${maven-surefire-plugin.version}</version>
                         <inherited>false</inherited>
                         <configuration>
-                            <suiteXmlFiles>src/test/resources/test_suite.xml</suiteXmlFiles>
+                            <suiteXmlFiles>
+                                <suiteXmlFile>src/test/resources/test_suite.xml</suiteXmlFile>
+                            </suiteXmlFiles>
                             <threadCount>1</threadCount>
                         </configuration>
                         <dependencies>
