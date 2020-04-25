@@ -1,11 +1,9 @@
 package com.susoft.executionorder;
 
-import org.slf4j.ext.XLogger;
-import org.slf4j.ext.XLoggerFactory;
+import com.susoft.AbstractTestBase;
 import org.testng.annotations.Test;
 
-public class Class1 {
-    private static final XLogger LOGGER = XLoggerFactory.getXLogger( Class1.class );
+public class Class1 extends AbstractTestBase {
     @Test
     public void test3(){
         LOGGER.entry();
