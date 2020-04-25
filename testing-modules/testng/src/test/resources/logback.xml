@@ -2,7 +2,7 @@
 <configuration>
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>testng - %date [%thread] %-5level %class{15}:%L [%M] - %message%n
+            <pattern>%property{FORK_NUM} - %date  [%thread] %-5level %class{15}:%L [%M] - %message%n
             </pattern>
         </encoder>
     </appender>

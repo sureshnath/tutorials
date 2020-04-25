@@ -43,6 +43,27 @@
                         <artifactId>maven-surefire-plugin</artifactId>
                         <version>${maven-surefire-plugin.version}</version>
                         <inherited>false</inherited>
+                        <configuration>
+                            <properties>
+                                <property>
+                                    <name>junit</name><value>false</value>
+                                </property>
+                               <!-- <property>
+                                   <name>surefire.testng.verbose</name>
+                                   <value>10</value>
+                               </property> -->
+                            </properties>
+                            <parallel>classes</parallel>
+                            <threadCount>1</threadCount>
+                            <forkCount>2</forkCount>
+                            <reuseForks>true</reuseForks>
+                            <parallelOptimized>false</parallelOptimized>
+                            <systemPropertyVariables>
+                                <FORK_NUM>fork_num_${surefire.forkNumber}</FORK_NUM>
+                            </systemPropertyVariables>
+                            <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
+<!--                            <workingDirectory>FORK_DIRECTORY_${surefire.forkNumber}</workingDirectory>-->
+                        </configuration>
                         <dependencies>
                             <dependency>
                                 <groupId>org.apache.maven.surefire</groupId>
