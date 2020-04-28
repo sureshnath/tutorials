@@ -1,6 +1,5 @@
-package com.susoft.executionorder;
+package com.susoft;
 
-import com.susoft.AbstractTestBase;
 import org.testng.annotations.Test;
 
 public class Class1UnitTest extends AbstractTestBase {

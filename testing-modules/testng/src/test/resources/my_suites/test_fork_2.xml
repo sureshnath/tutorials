@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="suite-fork-2">
+    <listeners>
+	    <listener class-name="com.baeldung.reports.CustomisedReports" />
+    </listeners>
+    <test name="test-fork-2">
+        <classes>
+            <class name="com.susoft.executionorder.Class1UnitTest"/>
+            <class name="com.susoft.executionorder.Class2UnitTest"/>
+        </classes>
+    </test>
+</suite>
