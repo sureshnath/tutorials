@@ -45,13 +45,14 @@
                         <inherited>false</inherited>
                         <configuration>
                             <properties>
+<!--                               <property>-->
+<!--                                   <name>surefire.testng.verbose</name>-->
+<!--                                   <value>10</value>-->
+<!--                               </property>-->
                                 <property>
-                                    <name>junit</name><value>false</value>
+                                    <name>usedefaultlisteners</name>
+                                    <value>false</value>
                                 </property>
-                               <property>
-                                   <name>surefire.testng.verbose</name>
-                                   <value>10</value>
-                               </property>
                                <property>
                                    <name>reporter</name>
                                    <value>com.baeldung.reports.CustomForkXMLReporter</value>
@@ -66,6 +67,7 @@
                                 <testng.report.xml.name>testng_report_${surefire.forkNumber}.xml</testng.report.xml.name>
                             </systemPropertyVariables>
                             <reportsDirectory>${project.build.directory}/surefire-reports/fork_${surefire.forkNumber}</reportsDirectory>
+                            <workingDirectory>${project.build.directory}/surefire-reports</workingDirectory>
                         </configuration>
                         <dependencies>
                             <dependency>
