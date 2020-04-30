@@ -28,6 +28,11 @@
             <artifactId>slf4j-ext</artifactId>
             <version>${org.slf4j.version}</version>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.github.adiralashiva8</groupId>-->
+<!--            <artifactId>testng-metrics</artifactId>-->
+<!--            <version>1.5</version>-->
+<!--        </dependency>-->
     </dependencies>
 
     <build>
@@ -67,7 +72,6 @@
                                 <testng.report.xml.name>testng_report_${surefire.forkNumber}.xml</testng.report.xml.name>
                             </systemPropertyVariables>
                             <reportsDirectory>${project.build.directory}/surefire-reports/fork_${surefire.forkNumber}</reportsDirectory>
-                            <workingDirectory>${project.build.directory}/surefire-reports</workingDirectory>
                         </configuration>
                         <dependencies>
                             <dependency>
